@@ -1,0 +1,21 @@
+
+.product-card {
+    background-color: #000000;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .product-card p {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+  }
+  
+  .product-card:hover {
+    background-color: #ffffffd2;
+  }
+  

@@ -1,0 +1,111 @@
+/* Estilos para la lista de productos debajo del Catálogo */
+.product-list {
+    width: 100%;
+    background-color: #000000; /* Fondo blanco para la lista de productos */
+    text-align: center;
+    padding: 20px;
+    display: flex; /* Mostrar productos en línea horizontal */
+    justify-content: space-around; /* Espaciar los productos uniformemente */
+    flex-wrap: wrap; /* Permitir que los productos se envuelvan a la siguiente línea */
+  }
+  
+
+  
+  .product-card {
+    background-color: #000000; /* Color de fondo para cada tarjeta de producto */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%; /* Ancho fijo para cada tarjeta de producto */
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .product-card p {
+      font-family: 'Lato', sans-serif; /* Fuente "Lato" */
+      font-size: 22px; /* Tamaño de letra deseado */
+    }
+  
+  .product-card:hover {
+    background-color: #ffffffd2; /* Cambiar el color de fondo al pasar el mouse */
+  }
+  
+ 
+  .custom-product-list {
+      width: 100%;
+      background-color: #000000;
+      text-align: left;
+      padding: 20px;
+    }
+    
+    .custom-product-list h2 {
+      font-size: 2rem;
+      color: #faeeee;
+      margin-bottom: 10px;
+    }
+    
+    .custom-subtitle {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-top: 20px;
+    }
+    
+    .custom-product-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    
+    .custom-product-card {
+      background-color: #000000;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 5px;
+      width: calc(50% - 50px); /* Ancho de las tarjetas con margen */
+      box-sizing: border-box;
+      text-align: center;
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    .custom-product-card img {
+      max-width: 50%;
+      height: auto;
+    }
+    
+    .custom-product-name,
+  .custom-product-price {
+    color: white;
+  }
+  
+  .product-list-title {
+      color: white;
+      font-size: 50px; /* Ajusta el tamaño de fuente */
+    }
+
+    /* Establece un tamaño máximo para las imágenes en las tarjetas de productos */
+.product-card img,
+.custom-product-card img {
+  max-width: 250px; /* Establece el ancho máximo de la imagen */
+  max-height: 250px; /* Establece la altura máxima de la imagen */
+  width: auto; /* Ajusta el ancho automáticamente para mantener la relación de aspecto */
+  height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto */
+}
+
+/* Estilos para los nombres de productos en la lista */
+.product-name,
+.product-list-title {
+  color: #ffffff; 
+}
+
+/* Estilos para los precios de productos en la lista */
+.product-price,
+.product-subtitle {
+  color: #e7dfdf; 
+}
+
+.product-description,
+.product-subtitle {
+  color: #e7dfdf; 
+}
+
