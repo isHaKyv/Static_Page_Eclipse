@@ -1,7 +1,6 @@
 /* Estilos para la lista de productos debajo del Catálogo */
 .product-list {
     width: 100%;
-    background-color: #000000; /* Fondo blanco para la lista de productos */
     text-align: center;
     padding: 20px;
     display: flex; /* Mostrar productos en línea horizontal */
@@ -24,7 +23,7 @@
   
   .product-card p {
       font-family: 'Lato', sans-serif; /* Fuente "Lato" */
-      font-size: 22px; /* Tamaño de letra deseado */
+      font-size: 30px; /* Tamaño de letra deseado */
     }
   
   .product-card:hover {

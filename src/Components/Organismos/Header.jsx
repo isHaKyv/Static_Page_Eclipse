@@ -1,8 +1,8 @@
 import React from 'react';
 import Text from '../atomos/Text';
 import bannerImage from '../images/banner.png';
-import './styles/header.css'; 
-import './styles/Styles.css'; 
+import './styles/header.css';
+import './styles/Styles.css';
 
 function Header() {
   return (
@@ -16,4 +16,4 @@ function Header() {
   );
 }
 
-export default Header; 
+export default Header;

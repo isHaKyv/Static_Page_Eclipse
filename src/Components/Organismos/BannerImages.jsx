@@ -6,7 +6,6 @@ import imgYugiohSlifer from '../images/yugioh-slifer.png';
 import './styles/ProductCategories.css'; 
 import './styles/Styles.css'; 
 
-
 function BannerImages() {
   return (
     <div className="banner-images">

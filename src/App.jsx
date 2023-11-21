@@ -4,6 +4,7 @@ import Juntador from "./Components/Templates/Juntador";
 import ProductList from "./Components/Organismos/ProductList";
 import ProductDetail from "./Components/Pages/ProductDetail";
 
+
 function App() {
   return (
     <Router>
