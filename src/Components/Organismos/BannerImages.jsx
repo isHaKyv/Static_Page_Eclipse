@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Image from '../atomos/Image';
 import imgPokemonSlifer from '../images/pokemon-slifer.png';
 import imgVariadosSlifer from '../images/variados-slifer.png';
@@ -10,15 +11,15 @@ function BannerImages() {
   return (
     <div className="banner-images">
       <div className="custom-product-categories">
-        <div className="product-category">
+        <Link to="/PokemonList" className="product-category">
           <Image src={imgPokemonSlifer} alt="Pokemon Slifer" />
-        </div>
-         <div className="product-category">
+        </Link>
+        <Link to="/YugiohList" className="product-category">
           <Image src={imgYugiohSlifer} alt="Yugioh Slifer" />
-        </div>
-        <div className="product-category">
+        </Link>
+        <Link to="/VariList" className="product-category">
           <Image src={imgVariadosSlifer} alt="Variados Slifer" />
-        </div>
+        </Link>
       </div>
     </div>
   );

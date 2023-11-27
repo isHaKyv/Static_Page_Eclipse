@@ -1,19 +1,26 @@
-
-
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Image from "../atomos/Image";
 import Text from "../atomos/Text";
 import products from "../data/productData";
-import "./styles/ProductDetails.css"; // Asegúrate de importar el archivo de estilos CSS
+import "./styles/ProductDetails.css";
 
 function ProductDetail() {
   const { name } = useParams();
   const product = products.find((product) => product.name === name);
+  const navigate = useNavigate();
 
   if (!product) {
     return <Text className="error-text">Producto no encontrado</Text>;
   }
+
+  const handleBuyNow = () => {
+    // Muestra la alerta
+    window.alert("Para comprar, primero inicia sesión.");
+
+    // Redirige al usuario al login
+    navigate("/login");
+  };
 
   return (
     <div className="product-detail">
@@ -25,8 +32,9 @@ function ProductDetail() {
         <Text className="product-price">Precio: ${product.price}</Text>
         <Text className="product-description">Description: {product.det}</Text>
         <div className="product-buttons">
-          <button className="btn-buy-now">Comprar</button>
-          <button className="btn-add-to-cart">Agregar al carrito</button>
+          <button className="btn-buy-now" onClick={handleBuyNow}>
+            Comprar
+          </button>
         </div>
       </div>
     </div>

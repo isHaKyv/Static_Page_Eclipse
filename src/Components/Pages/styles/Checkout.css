@@ -1,0 +1,101 @@
+/* Checkout.css */
+
+/* Estilo para la vista general */
+.checkout-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: stretch; /* Alinea los elementos en la dirección transversal (vertical) */
+    height: 100vh; /* Altura del 100% de la ventana */
+  }
+  
+  body {
+    background-color: #000; /* Color de fondo negro para toda la página */
+    color: #fff; /* Texto blanco */
+    margin: 0; /* Eliminar márgenes por defecto del body */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+  }
+  
+  .product-accordion {
+    border: 1px solid #444; /* Borde oscuro para el acordeón */
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333; /* Fondo oscuro para el encabezado del acordeón */
+  }
+  
+  .accordion-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    background-color: #444; /* Fondo oscuro para el contenido del acordeón */
+  }
+  
+  /* Estilo general para los checkboxes */
+  .product-accordion .accordion-header input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px; /* Espacio entre el checkbox y el texto */
+  }
+  
+  /* Estilo cuando el checkbox está marcado */
+  .product-accordion .accordion-header input[type="checkbox"]:checked {
+    background-color: #fff; /* Color de fondo cuando está marcado */
+    border-color: #000; /* Color del borde cuando está marcado */
+  }
+  
+  /* Estilo para cambiar el color del texto al seleccionar */
+  .product-accordion.selected .accordion-header h3 {
+    color: #000; /* Cambia el color del texto al seleccionar un producto */
+  }
+  
+  /* Nueva clase para las columnas */
+  .column {
+    flex: 1;
+    padding: 10px; /* Espaciado interno */
+  }
+  
+  /* Estilo para la columna de la lista de productos */
+  .product-list {
+    background-color: #111; /* Fondo oscuro para la columna de productos */
+  }
+  
+  /* Estilo para la columna de productos seleccionados */
+  .selected-products {
+    background-color: #222; /* Fondo oscuro para la columna de productos seleccionados */
+  }
+  
+  /* Estilo para el botón de realizar compra */
+  .checkout-button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Espaciado superior para separar el botón de la lista de productos seleccionados */
+    align-self: center; /* Centra el botón horizontalmente */
+  }
+  
+  /* Estilo para el botón de realizar compra al pasar el ratón */
+  .checkout-button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  

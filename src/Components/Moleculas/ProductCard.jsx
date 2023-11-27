@@ -2,11 +2,10 @@ import React from 'react';
 import Image from '../atomos/Image';
 import Text from '../atomos/Text';
 import './styles/ProductCard.css';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';  // Cambiado a useNavigate
 
 function ProductCard({ imageSrc, alt, productName, price }) {
- 
-  const history = useHistory();
+  const navigate = useNavigate();  // Cambiado a useNavigate
 
   const product = {
     imageSrc: imageSrc,
@@ -18,8 +17,8 @@ function ProductCard({ imageSrc, alt, productName, price }) {
   const handleAdd = () => {
     localStorage.setItem(`producto`, JSON.stringify(product));
 
-    // Utiliza el método push de history para redirigir a la vista de detalle del producto
-    history.push(`/products/${productName}`);
+    // Utiliza el método navigate para redirigir a la vista de detalle del producto
+    navigate(`/products/${productName}`);  // Cambiado a navigate
   };
 
   return (
